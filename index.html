@@ -1,85 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-hw-now2/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/goit-hw-now2/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/goit-hw-now2/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/goit-hw-now2/assets/favicon-db7f20dc.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodSta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  
+  <script type="module" crossorigin src="/goit-hw-now2/assets/index-fac82e35.js"></script>
+  <link rel="stylesheet" href="/goit-hw-now2/assets/index-6fd6466c.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrap container">
+  <a href="../index.html" class="logo-link link"> 
+    <svg class="logo" width="66" height="52">
+      <use href="../img/sprite.svg#icon-logo"></use>
+    </svg>
+  </a>
+  <nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Home</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">About</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Service</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Menu</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Contact</a>
+        </li>
     </ul>
-  </nav>
-</header>
+</nav>
+  
+  <button class="header__btn general-btn" type="button">Order Now</button>
+</div>
+  </header>
 
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/goit-hw-now2/assets/javascript-8dac5379.svg" alt="" />
+  <main>
+    <section class="hero section">
+      <div class="hero__wrap container">
+    <div class="hero__text-box">
+        <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum
+            tristique. Duis
+            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <button class="hero__btn general-btn" type="button">Order Now</button>
+    </div>
+    <div class="hero__img-box">
+        <picture>
+            <source media="(min-width: 1280px)" srcset="../img/hero.png 1x, ../img/hero@2x.png 2x" width="511">
+            <source media="(min-width: 768px)" srcset="../img/tablet/t-hero.png 1x , ../img/tablet/t-hero@2x.png 2x"
+                width="292">
+            <img srcset="../img/hero@2x.png 2x" src="../img/hero.png" alt="plate with food">
+        </picture>
+    </div>
+</div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <section class="about">
+      <div class="about__wrap container">
+    <div class="about__img-box">
+        <picture>
+            <source media="(max-width: 767px)" srcset="../img/mobile/apple.png 1x, ../img/mobile/apple@2x.png 2x"
+                width="202">
+            <source media="(min-width: 1280px)" srcset="../img/apple.png 1x, ../img/apple@2x.png 2x" width="396">
+            <source media="(min-width: 768px)" srcset="../img/tablet/t-apple.png 1x, ../img/tablet/t-apple@2x.png 2x"
+                width="263">
+            <img srcset="../img/apple@2x.png 2x" src="../img/apple.png" alt="apple">
+        </picture>
+        <div class="about__tiblet-img">
+            <img srcset="../img/tablet/t-midl-aple@2x.png 2x" src="../img/tablet/t-midl-aple.png" alt="apple" width="166">
+            <img srcset="../img/tablet/t-small-aple@2x.png 2x" src="../img/tablet/t-small-aple.png" alt="apple" width="108">
+        </div>
+    </div>
+    <div class="about__text-box">
+        <h2 class="about__title">What’s Special About Our Offerings</h2>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique. Duis
+            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <ul class="about__list">
+            <li class="about__list-item">
+                <svg class="about__item-icon">
+                    <use href="../img/sprite.svg#icon-fly" width="32" height="32"></use>
+                </svg>
+                <h3 class="about__item-title">Fasest Delivery</h3>
+                <p class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            </li>
+            <li class="about__list-item">
+                <svg class="about__item-icon">
+                    <use href="../img/sprite.svg#icon-tuch" width="32" height="32"></use>
+                </svg>
+                <h3 class="about__item-title">Easy To Order</h3>
+                <p class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            </li>
+        </ul>
+        <button class="about__btn secondary-btn">Order Now</button>
+    </div>
+</div>
+    </section>
+    <section class="our-favorites">
+      <div class="our-favorites__wrap container">
+    <h2 class="our-favorites__title">Some of Our Favorites</h2>
+    <p class="our-favorites__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <ul class="our-favorites__list">
+        <li class="our-favorites__list-item">
+            <a href="" class="our-favorites__list-link link">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="../img/mobile/m-hamburger@2x.png 1x, ../img/mobile/m-hamburger@2x.png 2x" width="224">
+                    <source media="(min-width: 1280px)" srcset="../img/hamburger.png 1x, ../img/hamburger@2x.png 2x" width="315">
+                    <source media="(min-width: 767px)" srcset="../img/tablet/t-hamburger.png 1x, ../img/tablet/t-hamburger@2x.png 2x" width="268">
+                    <img srcset="../img/hamburger@2x.png 2x" src="../img/hamburger.png" alt="hamburger">
+                </picture>
+            </a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="our-favorites__list-item">
+            <a href="" class="our-favorites__list-link link">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="../img/mobile/m-pasta.png 1x, ../img/mobile/m-pasta@2x.png 2x" width="224">
+                    <source media="(min-width: 1280px)" srcset="../img/pasta.png 1x, ../img/pasta@2x.png 2x" width="315">
+                    <source media="(min-width: 767px)" srcset="../img/tablet/t-pasta.png 1x, ../img/tablet/t-pasta@2x.png 2x" width="268">
+                    <img srcset="../img/pasta@2x.png 2x" src="../img/pasta.png" alt="pasta">
+                </picture>
+            </a>
         </li>
-      </ul>
+        <li class="our-favorites__list-item">
+            <a href="" class="our-favorites__list-link link">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="../img/mobile/m-pizza.png 1x, ../img/mobile/m-pizza@2x.png 2x" width="224">
+                    <source media="(min-width: 1280px)" srcset="../img/pizza.png 1x, ../img/pizza@2x.png 2x" width="315">
+                    <source media="(min-width: 767px)" srcset="../img/tablet/t-pizza.png 1x, ../img/tablet/t-pizza@2x.png 2x" width="268">
+                    <img srcset="../img/pizza@2x.png 2x" src="../img/pizza.png" alt="pizza">
+                </picture>
+            </a>
+        </li>
+        <li class="our-favorites__list-item">
+            <a href="" class="our-favorites__list-link link">
+                <picture>
+                    <source media="(min-width: 1280px)" srcset="../img/chicken.png 1x, ../img/chicken@2x.png 2x" width="315">
+                    <source media="(min-width: 767px)" srcset="../img/tablet/t-chicken.png 1x, ../img/tablet/t-chicken@2x.png 2x" width="268">
+                    <img srcset="../img/chicken@2x.png 2x" src="../img/chicken.png" alt="rice with chicken">
+                </picture>
+            </a>
+        </li>
+        <li class="our-favorites__list-item">
+            <a href="" class="our-favorites__list-link link">
+                <picture>
+                    <source media="(min-width: 1280px)" srcset="../img/salad.png 1x, ../img/salad@2x.png 2x" width="315">
+                    <source media="(min-width: 767px)" srcset="../img/tablet/t-salad.png 1x, ../img/tablet/t-salad@2x.png 2x" width="268">
+                    <img srcset="../img/salad@2x.png 2x" src="../img/salad.png" alt="salad">
+                </picture>
+            </a>
+        </li>
+        <li class="our-favorites__list-item">
+            <a href="" class="our-favorites__list-link link">
+                <picture>
+                    <source media="(min-width: 1280px)" srcset="../img/tablet/t-borsch.png 1x, ../img/tablet/t-borsch@2x.png 2x" width="315">
+                    <source media="(min-width: 767px)" srcset="../img/borsch.png 1x, ../img/borsch@2x.png 2x" width="268">
+                    <img srcset="../img/borsch@2x.png 2x" src="../img/borsch.png" alt="borsch">
+                </picture>
+            </a>
+        </li>
+    </ul>
+</div>
+    </section>
+    <section class="customers-say">
+      <div class="customers-say__wrap container">
+    <h2 class="customers-say__title">What our Customers Say</h2>
+    <p class="customers-say__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <ul class="customers-say__list">
+        <li class="customers-say__list-item">
+            <div class="customers-say__stars-box">
+                <svg class="stars-icon" width="101" height="16">
+                    <use href="../img/sprite.svg#icon-stars"></use>
+                </svg>
+                <p class="customers-say__comment-text">“The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked”</p>
+                <div class="customers-say__user-date">
+                    <img src="../img/photo-man.png" alt="a photo of a man" width="48">
+                    <p class="customers-say__user-name">Sumith Shah</p>
+                    <p class="customers-say__user-role">Some Dude</p>
+                </div>
+            </div>
+        </li>
+        <li class="customers-say__list-item">
+            <div class="customers-say__stars-box">
+                <svg class="stars-icon" width="101" height="16">
+                    <use href="../img/sprite.svg#icon-stars"></use>
+                </svg>
+                <p class="customers-say__comment-text">“The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked”</p>
+                <div class="customers-say__user-date">
+                    <img src="../img/photo-woman.png" alt="a photo of a woman" width="48">
+                    <p class="customers-say__user-name">Sumith Shah</p>
+                    <p class="customers-say__user-role">Some Dude</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe__wrap conteiner">
+    <b class="subscribe__title">Subscribe To Get Special Offers</b>
+    <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+    <form class="subscribe__form">
+        <input class="subscribe__input" type="email" required placeholder="Enter your email">
+        <button class="subscribe__btn general-btn" type="submit">Subscribe</button>
+    </form>
+</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap container">
+    <a href="../index.html" class="logo-link link">
+        <svg class="logo" width="66" height="52">
+            <use href="../img/sprite.svg#icon-logo"></use>
+        </svg>
+    </a>
+    <nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Home</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">About</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Service</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Menu</a>
+        </li>
+        <li class="navigation__item">
+            <a href="../" class="nav-link link">Contact</a>
+        </li>
+    </ul>
+</nav>
+    <form class="footer__form">
+        <b class="footer__form-tittle">Subscribe</b>
+        <input class="footer__form-input" type="email" required placeholder="Enter your email">
+        <button class="footer__form-btn general-btn" type="submit">Subscribe</button>
+        <p class="footer__form-text">By subscribing you agree to with our <a href="">Privacy Policy</a></p>
+    </form>
+    <div class="footer__bottom-box">
+        <ul class="footer__bottom-list">
+            <li class="footer__bottom-item"><a href="" class="def-link">Privacy Policy</a></li>
+            <li class="footer__bottom-item"><a href="" class="def-link">Terms of Service</a></li>
+            <li class="footer__bottom-item"><a href="" class="def-link">Cookies Settings</a></li>
+        </ul>
+        <p class="footer__bottom-text">2022 FoodSta. All right reserved.</p>
     </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/goit-hw-now2/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
+</div>
+  </footer>
 
+  
+</body>
 
-    
-  </body>
 </html>
