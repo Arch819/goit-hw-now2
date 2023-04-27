@@ -1,0 +1,123 @@
+.customers-say {
+    background: var(--background-section);
+}
+
+.customers-say__list-item {
+    border-radius: 0 30px 30px 30px;
+    background: var(--background-page);
+}
+
+.stars-icon {
+    margin-bottom: 29px;
+}
+
+.customers-say__user-date {
+    display: flex;
+    align-items: center;
+}
+
+.customers-say__user-text {
+    border-right: 1px solid var(--border-sec-btn);
+}
+
+.customers-say__user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+
+    margin-bottom: 2px;
+}
+
+.customers-say__user-role {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+}
+
+@media screen and (max-width: 767px) {
+    .customers-say__title {
+        font-size: 28px;
+        line-height: calc(33 / 28);
+
+        margin-bottom: 20px;
+    }
+
+    .customers-say__text {
+        font-size: 14px;
+        line-height: calc(16 / 14);
+
+        margin-bottom: 32px;
+    }
+
+    .customers-say__list-item {
+        padding: 8px;
+    }
+
+    .customers-say__list-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+
+    .customers-say__comment-text {
+        font-weight: 700;
+        line-height: calc(19 / 16);
+
+        margin-bottom: 39px;
+    }
+
+    .customers-say__user-text {
+        padding: 4px 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customers-say__title {
+        font-size: 42px;
+        line-height: calc(49 / 42);
+
+        margin-bottom: 20px;
+    }
+
+    .customers-say__text {
+        line-height: calc(19 / 16);
+
+        margin-bottom: 32px;
+    }
+
+    .customers-say__list {
+        display: flex;
+        gap: 44px;
+    }
+
+    .customers-say__list-item {
+        max-width: 336px;
+        padding: 12px;
+    }
+
+    .customers-say__comment-text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(21 / 18);
+
+        margin-bottom: 30px;
+    }
+
+    .customers-say__user-text {
+        padding: 6px 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .customers-say__list {
+        gap: 140px;
+    }
+
+    .customers-say__list-item {
+        max-width: 501px;
+        padding: 14px;
+    }
+
+
+    .customers-say__comment-text {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,12 @@
+.input {
+    background: var(--background-def);
+    border: 1px solid var(--border-input);
+    border-radius: 30px;
+    outline: transparent;
+
+    transition: border var(--transition);
+}
+
+.input:focus {
+    border-color: var(--focus-border-input);
+}

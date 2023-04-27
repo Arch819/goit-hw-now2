@@ -1,0 +1,243 @@
+.about {
+    background: var(--background-section);
+}
+
+.about__tiblet-img {
+    display: none;
+}
+
+.about__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 8px;
+
+    background: #ffffff;
+    border-radius: 100%;
+    border: none;
+    fill: var(--color-link);
+}
+
+@media screen and (max-width: 767px) {
+    .about__img-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 12px;
+
+        border-radius: 100%;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+
+        margin-bottom: 60px;
+    }
+
+    .about__picture {
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 12px;
+
+        background: var(--background-page);
+        border-radius: 100%;
+
+    }
+
+    .about__title {
+        font-size: 28px;
+        line-height: calc(33 / 28);
+
+        margin-bottom: 27px;
+    }
+
+    .about__text {
+        margin-bottom: 28px;
+    }
+
+    .about__list {
+        margin-bottom: 40px;
+    }
+
+    .about__list-item {
+        max-width: 252px;
+    }
+
+    .about__list-item:first-child {
+        margin-bottom: 28px;
+    }
+
+
+    .about__item-title {
+        font-size: 18px;
+        line-height: calc(21 / 18);
+
+        margin-bottom: 16px;
+    }
+
+    .about__item-text {
+        font-size: 14px;
+    }
+
+    .about__btn-box {
+        display: flex;
+        gap: 24px;
+    }
+
+    .about__more-btn {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        font-size: 14px;
+        line-height: 1.5;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .about__tiblet-img {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about__img-tumb {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 64px;
+    }
+
+    .about__img-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+
+        margin-right: 26px;
+
+        border-radius: 100%;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .about__picture {
+        padding-left: 34px;
+        padding-right: 34px;
+        padding-bottom: 16px;
+
+        background: var(--background-page);
+        border-radius: 100%;
+    }
+
+    .about__tiblet-img {
+        align-items: baseline;
+        gap: 38px;
+    }
+
+    .about__title {
+        max-width: 526px;
+        font-size: 42px;
+        line-height: calc(49 / 42);
+
+        margin-bottom: 20px;
+    }
+
+    .about__text {
+        line-height: calc(19 / 16);
+
+        margin-bottom: 40px;
+    }
+
+    .about__list {
+        display: flex;
+        align-items: center;
+        gap: 116px;
+        margin-bottom: 63px;
+    }
+
+    /* o */
+    .about__list-item {
+        width: 252px;
+    }
+
+    .about__item-title {
+        font-size: 18px;
+        line-height: calc(21 / 18);
+
+        margin-bottom: 16px;
+    }
+
+    .about__item-text {
+        font-size: 14px;
+    }
+
+    .about__btn-box {
+        display: flex;
+        gap: 24px;
+    }
+
+    .about__more-btn {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        font-size: 14px;
+        line-height: 1.5;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about__img-tumb {
+        margin-bottom: 0;
+    }
+
+    .about__img-box {
+        margin-right: 150px;
+    }
+
+    .about__picture {
+        padding-left: 76px;
+        padding-right: 78px;
+        padding-bottom: 24px;
+    }
+
+    .about__text-box {
+        max-width: 573px;
+    }
+
+    .about__item-title {
+        line-height: calc(50 / 42);
+    }
+
+    .about__item-text {
+        line-height: calc(24 / 16);
+    }
+
+    .about__list {
+        gap: 67px;
+
+        margin-bottom: 58px;
+    }
+
+    .about__item-title {
+        line-height: calc(25 / 18);
+    }
+
+    .about__item-text {
+        line-height: calc(21 / 14);
+    }
+
+    .about__more-btn {
+        display: none;
+    }
+}

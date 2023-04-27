@@ -24,12 +24,16 @@ a {
 }
 
 .link {
+  display: block;
   text-decoration: none;
 }
 
 button {
-  font-family: inherit;
   cursor: pointer;
+  display: inline-block;
+
+  transition: background var(--transition), color var(--transition), border var(--transition);
+
 }
 
 img {
@@ -39,5 +43,8 @@ img {
 }
 
 body {
+  background: var(--background-page);
+
   font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
 }

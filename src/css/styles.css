@@ -5,8 +5,18 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./components/btn.css');
+@import url('./components/nav.css');
+@import url('./components/input.css');
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./about.css');
+@import url('./our-favorites.css');
+@import url('./customers-say.css');
+@import url('./subscribe.css');
+@import url('footer.css');
+
+
 
 :root {
   font-synthesis: none;
@@ -20,9 +30,11 @@
   --color-placeholder: #505050;
   --color-link: #7EB101;
 
+  --background-def: #ffffff;
   --background-page: #FEFEFE;
   --background-gen-btn: #BBF330;
   --background-sec-btn: #ffffff;
+  --background-section: #FFE550;
 
   --border-sec-btn: #7EB101;
   --border-input: #FFE550;
@@ -34,6 +46,55 @@
   --hover-sec-btn: #BBF330;
 
   --hover-border-sec-btn: #FFE450;
-  --hover-border-input: #7EB101;
+  --focus-border-input: #7EB101;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section:not(:first-child) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .hero {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1280px;
+  }
+}

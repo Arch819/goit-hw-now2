@@ -4,7 +4,22 @@
       <use href="../img/sprite.svg#icon-logo"></use>
     </svg>
   </a>
-  <load="partials/navigation.html" />
-  
-  <button class="header__btn general-btn" type="button">Order Now</button>
+  <button type="button" class="js-open-menu">
+    <svg class="open-menu__icon" width="28" height="28">
+      <use href="../img/sprite.svg#icon-m_menu"></use>
+    </svg>
+  </button>
+  <div class="header__box">
+    <load="partials/navigation.html" />
+    
+    <button class="header__btn general-btn order btn" type="button">Order Now</button>
+  </div>
+  <div class="mobile-menu js-menu-container" >
+    <button class="close-btn js-close-menu" type="button">
+      <svg class="icon-close-btn" width="24" height="24">
+        <use href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <load="partials/navigation.html" />
+  </div>
 </div>
