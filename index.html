@@ -15,8 +15,8 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <script type="module" crossorigin src="/goit-hw-now2/assets/index-5bcd1419.js"></script>
-  <link rel="stylesheet" href="/goit-hw-now2/assets/index-a31b806f.css">
+  <script type="module" crossorigin src="/goit-hw-now2/assets/index-9f6ae533.js"></script>
+  <link rel="stylesheet" href="/goit-hw-now2/assets/index-f4999262.css">
 </head>
 
 <body>
@@ -53,10 +53,10 @@
     </ul>
 </nav>
     
-    <button class="header__btn general-btn order btn" type="button">Order Now</button>
+    <button class="header__btn general-btn order btn" type="button" data-modal-open>Order Now</button>
   </div>
   <div class="mobile-menu js-menu-container" >
-    <button class="close-btn js-close-menu" type="button">
+    <button class="menu__close-btn close-btn js-close-menu" type="button">
       <svg class="icon-close-btn" width="24" height="24">
         <use href="/goit-hw-now2/assets/sprite-d1f5619a.svg#icon-close"></use>
       </svg>
@@ -93,7 +93,7 @@
             elementum
             tristique. Duis
             cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        <button class="hero__btn general-btn order btn" type="button">Order Now</button>
+        <button class="hero__btn general-btn order btn" type="button" data-modal-open>Order Now</button>
     </div>
     <div class="hero__img-box">
         <picture>
@@ -149,7 +149,7 @@
             </li>
         </ul>
         <div class="about__btn-box">
-            <button class="about__btn secondary-btn order btn">Order Now</button>
+            <button class="about__btn secondary-btn order btn" data-modal-open>Order Now</button>
             <a href="" class="about__more-btn link">
                 <span class="about__more-text">Read More</span>
                 <svg class="about__more-icon" width="14" height="14">
@@ -327,6 +327,36 @@
 
 </div>
   </footer>
+
+  <div class="modal-backdrop " data-modal>
+    <div class="modal">
+    <button class="modal__close-btn close-btn" type="button" data-modal-close>
+        <svg class="icon-close-btn" width="24" height="24">
+            <use href="/goit-hw-now2/assets/sprite-d1f5619a.svg#icon-close"></use>
+        </svg>
+    </button>
+    
+    <form>
+        <b class="modal__form-title">Order Form</b>
+        <label class="modal__form-label">
+            <span class="modal__label-text">Name</span>
+            <input class="modal__form-input input" type="text" name="user-name" placeholder="Your name" required>
+        </label>
+    
+        <label class="modal__form-label">
+            <span class="modal__label-text">Phone number</span>
+            <input class="modal__form-input input" type="tel" name="user-phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                required>
+        </label>
+    
+        <label class="modal__form-label">
+            <span class="modal__label-text">E-mail</span>
+            <input class="modal__form-input input" type="email" name="user-email" placeholder="example@gmail.com" required>
+        </label>
+        <button class="modal__form-btn secondary-btn btn" type="submit">Send</button>
+    </form>
+</div>
+  </div>
 
   
 </body>
