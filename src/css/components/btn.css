@@ -1,3 +1,4 @@
+/* --------------basic style btn */
 .btn {
     font-weight: 500;
     font-size: 13px;
@@ -21,7 +22,19 @@
     border: 2px solid #7EB101;
 }
 
+.close-btn {
+    position: absolute;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0;
+
+    border: none;
+}
+
+/* --------------mobile menu btn */
 .js-open-menu {
     align-items: center;
     justify-content: center;
@@ -34,21 +47,14 @@
     fill: var(--border-sec-btn);
 }
 
-.close-btn {
-    position: absolute;
+.menu__close-btn {
     top: 4px;
     right: 4px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0;
-
     background: transparent;
-    border: none;
 }
 
+/* --------------order btn*/
 .header__btn,
 .hero__btn {
     padding: 6px 18px;
@@ -60,11 +66,31 @@
     padding: 10px 22px;
 }
 
-.footer__form-btn:is(:hover, :focus) {
-    border-color: var(--hover-border-sec-btn);
-}
 
 .about__btn:is(:hover, :focus) {
     background: var(--hover-sec-btn);
     border-color: transparent;
+}
+
+/* --------------footer btn */
+.footer__form-btn:is(:hover, :focus) {
+    border-color: var(--hover-border-sec-btn);
+}
+
+/* --------------modal btn */
+.modal__close-btn {
+    top: 16px;
+    right: 16px;
+
+    border-radius: 100%;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.modal__form-btn {
+    padding: 10px 38px;
+}
+
+.modal__form-btn:is(:hover, :focus) {
+    background: var(--hover-sec-btn);
 }

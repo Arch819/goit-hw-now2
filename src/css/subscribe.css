@@ -8,11 +8,6 @@
     margin-bottom: 20px;
 }
 
-.subscribe__input::placeholder {
-    font-size: 12px;
-    line-height: calc(18 / 12);
-    color: #505050;
-}
 
 @media screen and (max-width: 767px) {
     .subscribe__img {

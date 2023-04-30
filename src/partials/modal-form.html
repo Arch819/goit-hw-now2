@@ -1,0 +1,27 @@
+<div class="modal">
+    <button class="modal__close-btn close-btn" type="button" data-modal-close>
+        <svg class="icon-close-btn" width="24" height="24">
+            <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+    
+    <form>
+        <b class="modal__form-title">Order Form</b>
+        <label class="modal__form-label">
+            <span class="modal__label-text">Name</span>
+            <input class="modal__form-input input" type="text" name="user-name" placeholder="Your name" required>
+        </label>
+    
+        <label class="modal__form-label">
+            <span class="modal__label-text">Phone number</span>
+            <input class="modal__form-input input" type="tel" name="user-phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                required>
+        </label>
+    
+        <label class="modal__form-label">
+            <span class="modal__label-text">E-mail</span>
+            <input class="modal__form-input input" type="email" name="user-email" placeholder="example@gmail.com" required>
+        </label>
+        <button class="modal__form-btn secondary-btn btn" type="submit">Send</button>
+    </form>
+</div>
